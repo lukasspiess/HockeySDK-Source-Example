@@ -1,0 +1,6 @@
+framework module Pods_HockeySDK_Source {
+  umbrella header "Pods-HockeySDK-Source-umbrella.h"
+
+  export *
+  module * { export * }
+}

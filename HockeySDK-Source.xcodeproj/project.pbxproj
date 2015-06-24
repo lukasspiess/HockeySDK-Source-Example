@@ -13,6 +13,7 @@
 		80EC7FB91B3ABE1700DD9986 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC7FB81B3ABE1700DD9986 /* Images.xcassets */; };
 		80EC7FBC1B3ABE1700DD9986 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80EC7FBA1B3ABE1700DD9986 /* LaunchScreen.xib */; };
 		80EC7FC81B3ABE1700DD9986 /* HockeySDK_SourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC7FC71B3ABE1700DD9986 /* HockeySDK_SourceTests.swift */; };
+		9A7B3E7C0B3D59E92EB0FAFC /* Pods_HockeySDK_Source.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F715FA0A21F192101301D97 /* Pods_HockeySDK_Source.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A685D9E59F818CA934C62D2 /* Pods-HockeySDK-Source.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeySDK-Source.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HockeySDK-Source/Pods-HockeySDK-Source.debug.xcconfig"; sourceTree = "<group>"; };
+		3F715FA0A21F192101301D97 /* Pods_HockeySDK_Source.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HockeySDK_Source.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D9D405CA8E0C9D4BEB48B /* Pods-HockeySDK-Source.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeySDK-Source.release.xcconfig"; path = "Pods/Target Support Files/Pods-HockeySDK-Source/Pods-HockeySDK-Source.release.xcconfig"; sourceTree = "<group>"; };
 		80EC7FAC1B3ABE1700DD9986 /* HockeySDK-Source.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HockeySDK-Source.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC7FB01B3ABE1700DD9986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80EC7FB11B3ABE1700DD9986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7B3E7C0B3D59E92EB0FAFC /* Pods_HockeySDK_Source.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69CD7AC50B0C58482184672B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F715FA0A21F192101301D97 /* Pods_HockeySDK_Source.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80EC7FA31B3ABE1700DD9986 = {
 			isa = PBXGroup;
 			children = (
 				80EC7FAE1B3ABE1700DD9986 /* HockeySDK-Source */,
 				80EC7FC41B3ABE1700DD9986 /* HockeySDK-SourceTests */,
 				80EC7FAD1B3ABE1700DD9986 /* Products */,
+				8401B3A821EFF39EBF2F2FE5 /* Pods */,
+				69CD7AC50B0C58482184672B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8401B3A821EFF39EBF2F2FE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A685D9E59F818CA934C62D2 /* Pods-HockeySDK-Source.debug.xcconfig */,
+				577D9D405CA8E0C9D4BEB48B /* Pods-HockeySDK-Source.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80EC7FCB1B3ABE1700DD9986 /* Build configuration list for PBXNativeTarget "HockeySDK-Source" */;
 			buildPhases = (
+				658200F46A8E0F11EB563163 /* Check Pods Manifest.lock */,
 				80EC7FA81B3ABE1700DD9986 /* Sources */,
 				80EC7FA91B3ABE1700DD9986 /* Frameworks */,
 				80EC7FAA1B3ABE1700DD9986 /* Resources */,
+				927EC76116583AB307DE01CF /* Copy Pods Resources */,
+				4F1930D77C66ED5425E2D058 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F1930D77C66ED5425E2D058 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HockeySDK-Source/Pods-HockeySDK-Source-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		658200F46A8E0F11EB563163 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		927EC76116583AB307DE01CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HockeySDK-Source/Pods-HockeySDK-Source-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80EC7FA81B3ABE1700DD9986 /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		80EC7FCC1B3ABE1700DD9986 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A685D9E59F818CA934C62D2 /* Pods-HockeySDK-Source.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HockeySDK-Source/Info.plist";
@@ -348,6 +424,7 @@
 		};
 		80EC7FCD1B3ABE1700DD9986 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577D9D405CA8E0C9D4BEB48B /* Pods-HockeySDK-Source.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HockeySDK-Source/Info.plist";
@@ -409,6 +486,7 @@
 				80EC7FCD1B3ABE1700DD9986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80EC7FCE1B3ABE1700DD9986 /* Build configuration list for PBXNativeTarget "HockeySDK-SourceTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				80EC7FD01B3ABE1700DD9986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

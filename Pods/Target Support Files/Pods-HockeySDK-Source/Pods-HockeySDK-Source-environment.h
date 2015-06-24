@@ -1,0 +1,56 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// HockeySDK-Source
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source 0
+
+// HockeySDK-Source/AdHocUpdates
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_AdHocUpdates
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_AdHocUpdates 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_AdHocUpdates 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_AdHocUpdates 0
+
+// HockeySDK-Source/AllFeatures
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_AllFeatures
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_AllFeatures 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_AllFeatures 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_AllFeatures 0
+
+// HockeySDK-Source/Authenticator
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_Authenticator
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_Authenticator 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_Authenticator 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_Authenticator 0
+
+// HockeySDK-Source/CrashReporter
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_CrashReporter
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_CrashReporter 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_CrashReporter 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_CrashReporter 0
+
+// HockeySDK-Source/SharedRequirements
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_SharedRequirements
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_SharedRequirements 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_SharedRequirements 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_SharedRequirements 0
+
+// HockeySDK-Source/StoreUpdates
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_StoreUpdates
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_StoreUpdates 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_StoreUpdates 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_StoreUpdates 0
+
+// HockeySDK-Source/UserFeedback
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Source_UserFeedback
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Source_UserFeedback 3
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Source_UserFeedback 7
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Source_UserFeedback 0
+

@@ -1,0 +1,16 @@
+framework module HockeySDK_Source {
+  umbrella header "Pods-HockeySDK-Source-HockeySDK-Source-umbrella.h"
+
+  export *
+  module * { export * }
+
+  private header "BITAuthenticator_Private.h"
+  private header "BITCrashDetailsPrivate.h"
+  private header "BITCrashManagerPrivate.h"
+  private header "BITFeedbackManagerPrivate.h"
+  private header "BITHockeyBaseManagerPrivate.h"
+  private header "BITStoreUpdateManagerPrivate.h"
+  private header "BITUpdateManagerPrivate.h"
+  private header "BITUpdateViewControllerPrivate.h"
+  private header "HockeySDKPrivate.h"
+}

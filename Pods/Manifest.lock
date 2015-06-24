@@ -1,0 +1,28 @@
+PODS:
+  - HockeySDK-Source (3.7.0):
+    - HockeySDK-Source/AllFeatures (= 3.7.0)
+  - HockeySDK-Source/AdHocUpdates (3.7.0):
+    - HockeySDK-Source/SharedRequirements
+  - HockeySDK-Source/AllFeatures (3.7.0):
+    - HockeySDK-Source/AdHocUpdates
+    - HockeySDK-Source/Authenticator
+    - HockeySDK-Source/CrashReporter
+    - HockeySDK-Source/StoreUpdates
+    - HockeySDK-Source/UserFeedback
+  - HockeySDK-Source/Authenticator (3.7.0):
+    - HockeySDK-Source/SharedRequirements
+  - HockeySDK-Source/CrashReporter (3.7.0):
+    - HockeySDK-Source/SharedRequirements
+  - HockeySDK-Source/SharedRequirements (3.7.0)
+  - HockeySDK-Source/StoreUpdates (3.7.0):
+    - HockeySDK-Source/SharedRequirements
+  - HockeySDK-Source/UserFeedback (3.7.0):
+    - HockeySDK-Source/SharedRequirements
+
+DEPENDENCIES:
+  - HockeySDK-Source
+
+SPEC CHECKSUMS:
+  HockeySDK-Source: 34022ff53e57bd329c5772bc149cbe803a49ba11
+
+COCOAPODS: 0.37.2
